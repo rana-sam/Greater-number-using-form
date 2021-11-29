@@ -1,10 +1,10 @@
 // program 1
-var Dom = document
+var dom = document
 
 function greater() {
-    var num1 = Dom.getElementById("number1")
-    var num2 = Dom.getElementById("number2")
-    var output = Dom.getElementById("output")
+    var num1 = dom.getElementById("number1")
+    var num2 = dom.getElementById("number2")
+    var output = dom.getElementById("output")
     var number1 = parseInt(num1.value)
     var number2 = parseInt(num2.value)
 
@@ -29,10 +29,10 @@ function greater() {
 //  program 2
 
 function greater3() {
-    var num1 = Dom.getElementById("numb1")
-    var num2 = Dom.getElementById("numb2")
-    var num3 = Dom.getElementById("numb3")
-    var output = Dom.getElementById("outp")
+    var num1 = dom.getElementById("numb1")
+    var num2 = dom.getElementById("numb2")
+    var num3 = dom.getElementById("numb3")
+    var output = dom.getElementById("outp")
     var number1 = parseInt(num1.value)
     var number2 = parseInt(num2.value)
     var number3 = parseInt(num3.value)
@@ -107,12 +107,26 @@ function divided() {
     else {
         divoutput.innerHTML = "Output: Enter Valid Number"
     }
-
+    number.value=""
 }
 
 
 // program 5
 function even() {
-    
+    var number=dom.getElementById("evnumber")
+    var num=parseInt(number.value)
+    if (num>=0 ||num<=0) {
+        
+        if (num%2==0) {
+            evoutput.innerHTML="Output:"+num+" is Even Number"
+        }
+        else{
+            evoutput.innerHTML="Output:"+ num+" is Odd Number"
+        }
+    }
+    else{
+        evoutput.innerHTML="Output: Enter Valid Number"
+    }
+    number.value=""
     
 }
