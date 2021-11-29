@@ -107,26 +107,45 @@ function divided() {
     else {
         divoutput.innerHTML = "Output: Enter Valid Number"
     }
-    number.value=""
+    number.value = ""
 }
 
 
 // program 5
 function even() {
-    var number=dom.getElementById("evnumber")
-    var num=parseInt(number.value)
-    if (num>=0 ||num<=0) {
-        
-        if (num%2==0) {
-            evoutput.innerHTML="Output:"+num+" is Even Number"
+    var number = dom.getElementById("evnumber")
+    var num = parseInt(number.value)
+    if (num >= 0 || num <= 0) {
+
+        if (num % 2 == 0) {
+            evoutput.innerHTML = "Output:" + num + " is Even Number"
         }
-        else{
-            evoutput.innerHTML="Output:"+ num+" is Odd Number"
+        else {
+            evoutput.innerHTML = "Output:" + num + " is Odd Number"
         }
     }
-    else{
-        evoutput.innerHTML="Output: Enter Valid Number"
+    else {
+        evoutput.innerHTML = "Output: Enter Valid Number"
     }
-    number.value=""
+    number.value = ""
+
+}
+// program 6
+function leap() {
+    var number = dom.getElementById("lenumber")
+    var num = parseInt(number.value)
+    if (num <= 12 && num>0) {
+            if (num % 4 == 0) {
+                leoutput.innerHTML = "Output:" + num + " is leap Year"
+            }
+            else {
+                leoutput.innerHTML = "Output:" + num + " is Not Leap Year"
+            }
     
+    }
+    else {
+        leoutput.innerHTML = "Output: Enter Valid Number"
+    }
+    number.value = ""
+
 }
