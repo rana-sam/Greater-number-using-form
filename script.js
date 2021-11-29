@@ -86,3 +86,29 @@ function anynumber() {
 
 
 // program 4
+
+function divided() {
+    var dom=document
+    var number=dom.getElementById("divnumber")
+    var num=number.value
+    if (num>=0 || num<=0) {
+        
+
+    if (num%5==0 && num%11==0) {
+        divoutput.innerHTML="Output: "+num+" is divided on Both 5 and 11"
+    }
+    else if(num%5==0){
+        divoutput.innerHTML="Output: "+num+" is divisibale on 5"
+    }
+    else if(num%11==0){
+        divoutput.innerHTML="Output: "+num+" is divisibale on 11"
+    }
+    else{
+        divoutput.innerHTML= "Output: "+num+" is Not divisibale on 11 or 5"
+    }
+}
+else{
+    divoutput.innerHTML="Output: Enter Valid Number"
+}
+    
+}
