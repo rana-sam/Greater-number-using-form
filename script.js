@@ -1,7 +1,7 @@
 // program 1
+var Dom = document
 
 function greater() {
-    var Dom = document
     var num1 = Dom.getElementById("number1")
     var num2 = Dom.getElementById("number2")
     var output = Dom.getElementById("output")
@@ -29,7 +29,6 @@ function greater() {
 //  program 2
 
 function greater3() {
-    var Dom = document
     var num1 = Dom.getElementById("numb1")
     var num2 = Dom.getElementById("numb2")
     var num3 = Dom.getElementById("numb3")
@@ -64,7 +63,6 @@ function greater3() {
 // program 3
 
 function anynumber() {
-    var dom = document
     var num = dom.getElementById("anynumber")
     var number = parseInt(num.value)
     if (number > 0) {
@@ -88,7 +86,6 @@ function anynumber() {
 // program 4
 
 function divided() {
-    var dom = document
     var number = dom.getElementById("divnumber")
     var num = number.value
     if (num >= 0 || num <= 0) {
@@ -111,4 +108,11 @@ function divided() {
         divoutput.innerHTML = "Output: Enter Valid Number"
     }
 
+}
+
+
+// program 5
+function even() {
+    
+    
 }
