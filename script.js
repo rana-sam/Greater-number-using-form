@@ -135,6 +135,8 @@ function leap() {
     var number = dom.getElementById("lenumber")
     var num = parseInt(number.value)
     if (num <= 12 && num>0) {
+
+
             if (num % 4 == 0) {
                 leoutput.innerHTML = "Output:" + num + " is leap Year"
             }
@@ -148,4 +150,14 @@ function leap() {
     }
     number.value = ""
 
+}
+
+// program 7
+
+function month() {
+
+    var number=dom.getElementById("monumber")
+    var num=parseInt(number.value)
+    
+    
 }
