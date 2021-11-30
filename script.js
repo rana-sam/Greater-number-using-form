@@ -158,6 +158,23 @@ function month() {
 
     var number=dom.getElementById("monumber")
     var num=parseInt(number.value)
-    
-    
+    if (num>0 && num<=12) {
+        if (num==2) {
+            mooutput.innerHTML="Output:There Is 28 Days In This Month"            
+        }
+        else if (num==1||num==3||num==5||num==7||num==8||num==10||num==12) {
+            mooutput.innerHTML="Output:There Is 31 Days In This Month"            
+
+        }
+        else{
+            mooutput.innerHTML="Output:There Is 30 Days In This Month"            
+
+        }
+        
+    }
+    else{
+        mooutput.innerHTML="Output:Please Enter Valid Month"            
+
+    }
+     number.value=""
 }
