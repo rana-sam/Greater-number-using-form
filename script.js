@@ -194,3 +194,45 @@ function alphabat() {
     }
     ch.value=""
 }
+
+
+// program 9
+function vowel() {
+    var ch=dom.getElementById("vowel")
+    var char=ch.value
+    if (char>='A' && char<='Z' || char>='a' && char<='z') {
+        if (char=='A'||char=='a'||char=='e'||char=='E'||char=='i'||char=='I'||char=='o'||char=='O'||char=='u'||char=='U') {
+            
+            voweloutput.innerHTML="Output: "+char+" Is Vowel Alphabat"
+        }
+        else{
+            voweloutput.innerHTML="Output: "+char+" Is Consonant Alphabat"
+
+        }
+    }
+    else{
+        voweloutput.innerHTML="Output: "+char+" Is Not A Alphabat"
+    }
+    ch.value=""
+}
+
+
+// program 10
+ 
+function character() {
+
+    var ch=dom.getElementById("char")
+    var char=ch.value
+    if (char<=0 || char>=0) {
+        charoutput.innerHTML="Output: "+char+" is Digit"
+    }
+    else if ((char>='a' && char<='z') || (char>='A' && char<='Z') ) {
+        
+        charoutput.innerHTML="Output: "+char+" is Alphabat"
+    }
+    else{
+        
+        charoutput.innerHTML="Output: "+char+" is Special Character"
+    }
+    ch.value=""
+}
