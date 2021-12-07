@@ -178,3 +178,19 @@ function month() {
     }
      number.value=""
 }
+
+
+
+// program 8
+
+function alphabat() {
+    var ch=dom.getElementById("alpha")
+    var char=ch.value
+    if (char>='A' && char<='Z' || char>='a' && char<='z') {
+        alphaoutput.innerHTML="Output: "+char+" Is Alphabat"
+    }
+    else{
+        alphaoutput.innerHTML="Output: "+char+" Is Not A Alphabat"
+    }
+    ch.value=""
+}
