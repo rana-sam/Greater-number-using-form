@@ -551,18 +551,19 @@ function amount() {
          var hra=num*0.2
          var da=num*0.8
          num=num+hra+da
-         saloutput.innerHTML="Output: Gross salary is"+num
+         saloutput.innerHTML="Output: Gross salary is "+num
      }
      else if (num<=20000) {
         var hra=num*0.25
         var da=num*0.9
         num=num+hra+da
-         saloutput.innerHTML="Output: Gross salary is"+num
+         saloutput.innerHTML="Output: Gross salary is "+num
      }
      else if (num>20000) {
         var hra=num*0.3
         var da=num*0.95
         num=num+hra+da
-         saloutput.innerHTML="Output: Gross salary is"+num
+         saloutput.innerHTML="Output: Gross salary is "+num
      }
+     num1.value=""
  }
