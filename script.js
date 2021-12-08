@@ -236,3 +236,120 @@ function character() {
     }
     ch.value=""
 }
+
+
+// program 11
+
+function uppercase() {
+    var ch=dom.getElementById("upper")
+    var char=ch.value
+    if (char>='A' && char<='Z' ) {
+        upperoutput.innerHTML="Output: "+char+" Is Uppercase Alphabat"
+    }
+    else if (char>='a' && char<='z') {
+        
+        upperoutput.innerHTML="Output: "+char+" Is A Lowercase Alphabat"
+    }
+    else{
+        upperoutput.innerHTML="Output: "+char+" Is Not A Alphabat"
+
+    }
+    ch.value=""
+}
+
+
+
+// program 12
+function week() {
+    var num=dom.getElementById("week")
+    var num1=parseInt(num.value)
+    if (num1==1) {
+        weekoutput.innerHTML="Output: Monday"
+        
+    }
+    else if(num1==2) {
+        weekoutput.innerHTML="Output: Tuseday"
+        
+    }
+    else if(num1==3) {
+        weekoutput.innerHTML="Output: Wednesday"
+        
+    }
+    else if(num1==4) {
+        weekoutput.innerHTML="Output: Thursday"
+        
+    }
+    else if(num1==5) {
+        weekoutput.innerHTML="Output: Friday"
+        
+    }
+    else if(num1==6) {
+        weekoutput.innerHTML="Output: Saturday"
+        
+    }
+    else if(num1==7) {
+        weekoutput.innerHTML="Output: Sunday"
+        
+    }
+    else{
+        
+        weekoutput.innerHTML="Output: Enter Valid Number From 1-7"
+    }
+    num.value=""
+    
+}
+
+
+// program 12
+
+function subject() {
+    var phy=dom.getElementById("phy")
+    var che=dom.getElementById("che")
+    var mat=dom.getElementById("math")
+    var bio=dom.getElementById("bio")
+    var com=dom.getElementById("com")
+    var num1=parseInt(phy.value)
+    var num2=parseInt(che.value)
+    var num3=parseInt(mat.value)
+    var num4=parseInt(bio.value)
+    var num5=parseInt(com.value)
+
+    var perc=((num1+num2+num3+num4+num5)/500)*100
+    if (perc<=100 && perc>=0) {
+        peroutput.innerHTML="Output Percentage: "+perc+"%" 
+    }
+    else  {
+        peroutput.innerHTML="Output Percentage: Enter valid number" 
+        
+    }
+
+
+
+    if (perc>=90 && perc<=100) {
+        graoutput.innerHTML="Output Grade: A"
+    }
+    else if (perc>=80 && perc<=100) {
+        graoutput.innerHTML="Output Grade: B"
+    }
+    else if (perc>=70 && perc<=100) {
+        graoutput.innerHTML="Output Grade: C"
+    }
+    else if (perc>=60 && perc<=100) {
+        graoutput.innerHTML="Output Grade: D"
+    }
+    else if (perc>=40 && perc<=100) {
+        graoutput.innerHTML="Output Grade: E"
+    }
+    else if (perc>=0 && perc<40) {
+        graoutput.innerHTML="Output Grade: F"
+    }
+    else{
+        graoutput.innerHTML="Output Grade: Enter Valid Number"
+    }
+     phy.value=""
+     mat.value=""
+     che.value=""
+     bio.value=""
+     com.value=""
+    
+}
