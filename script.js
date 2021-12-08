@@ -300,7 +300,7 @@ function week() {
 }
 
 
-// program 12
+// program 13
 
 function subject() {
     var phy=dom.getElementById("phy")
