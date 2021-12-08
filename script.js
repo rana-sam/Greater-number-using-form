@@ -134,16 +134,16 @@ function even() {
 function leap() {
     var number = dom.getElementById("lenumber")
     var num = parseInt(number.value)
-    if (num <= 12 && num>0) {
+    if (num <= 12 && num > 0) {
 
 
-            if (num % 4 == 0) {
-                leoutput.innerHTML = "Output:" + num + " is leap Year"
-            }
-            else {
-                leoutput.innerHTML = "Output:" + num + " is Not Leap Year"
-            }
-    
+        if (num % 4 == 0) {
+            leoutput.innerHTML = "Output:" + num + " is leap Year"
+        }
+        else {
+            leoutput.innerHTML = "Output:" + num + " is Not Leap Year"
+        }
+
     }
     else {
         leoutput.innerHTML = "Output: Enter Valid Number"
@@ -156,27 +156,27 @@ function leap() {
 
 function month() {
 
-    var number=dom.getElementById("monumber")
-    var num=parseInt(number.value)
-    if (num>0 && num<=12) {
-        if (num==2) {
-            mooutput.innerHTML="Output:There Is 28 Days In This Month"            
+    var number = dom.getElementById("monumber")
+    var num = parseInt(number.value)
+    if (num > 0 && num <= 12) {
+        if (num == 2) {
+            mooutput.innerHTML = "Output:There Is 28 Days In This Month"
         }
-        else if (num==1||num==3||num==5||num==7||num==8||num==10||num==12) {
-            mooutput.innerHTML="Output:There Is 31 Days In This Month"            
+        else if (num == 1 || num == 3 || num == 5 || num == 7 || num == 8 || num == 10 || num == 12) {
+            mooutput.innerHTML = "Output:There Is 31 Days In This Month"
 
         }
-        else{
-            mooutput.innerHTML="Output:There Is 30 Days In This Month"            
+        else {
+            mooutput.innerHTML = "Output:There Is 30 Days In This Month"
 
         }
-        
-    }
-    else{
-        mooutput.innerHTML="Output:Please Enter Valid Month"            
 
     }
-     number.value=""
+    else {
+        mooutput.innerHTML = "Output:Please Enter Valid Month"
+
+    }
+    number.value = ""
 }
 
 
@@ -184,172 +184,358 @@ function month() {
 // program 8
 
 function alphabat() {
-    var ch=dom.getElementById("alpha")
-    var char=ch.value
-    if (char>='A' && char<='Z' || char>='a' && char<='z') {
-        alphaoutput.innerHTML="Output: "+char+" Is Alphabat"
+    var ch = dom.getElementById("alpha")
+    var char = ch.value
+    if (char >= 'A' && char <= 'Z' || char >= 'a' && char <= 'z') {
+        alphaoutput.innerHTML = "Output: " + char + " Is Alphabat"
     }
-    else{
-        alphaoutput.innerHTML="Output: "+char+" Is Not A Alphabat"
+    else {
+        alphaoutput.innerHTML = "Output: " + char + " Is Not A Alphabat"
     }
-    ch.value=""
+    ch.value = ""
 }
 
 
 // program 9
 function vowel() {
-    var ch=dom.getElementById("vowel")
-    var char=ch.value
-    if (char>='A' && char<='Z' || char>='a' && char<='z') {
-        if (char=='A'||char=='a'||char=='e'||char=='E'||char=='i'||char=='I'||char=='o'||char=='O'||char=='u'||char=='U') {
-            
-            voweloutput.innerHTML="Output: "+char+" Is Vowel Alphabat"
+    var ch = dom.getElementById("vowel")
+    var char = ch.value
+    if (char >= 'A' && char <= 'Z' || char >= 'a' && char <= 'z') {
+        if (char == 'A' || char == 'a' || char == 'e' || char == 'E' || char == 'i' || char == 'I' || char == 'o' || char == 'O' || char == 'u' || char == 'U') {
+
+            voweloutput.innerHTML = "Output: " + char + " Is Vowel Alphabat"
         }
-        else{
-            voweloutput.innerHTML="Output: "+char+" Is Consonant Alphabat"
+        else {
+            voweloutput.innerHTML = "Output: " + char + " Is Consonant Alphabat"
 
         }
     }
-    else{
-        voweloutput.innerHTML="Output: "+char+" Is Not A Alphabat"
+    else {
+        voweloutput.innerHTML = "Output: " + char + " Is Not A Alphabat"
     }
-    ch.value=""
+    ch.value = ""
 }
 
 
 // program 10
- 
+
 function character() {
 
-    var ch=dom.getElementById("char")
-    var char=ch.value
-    if (char<=0 || char>=0) {
-        charoutput.innerHTML="Output: "+char+" is Digit"
+    var ch = dom.getElementById("char")
+    var char = ch.value
+    if (char <= 0 || char >= 0) {
+        charoutput.innerHTML = "Output: " + char + " is Digit"
     }
-    else if ((char>='a' && char<='z') || (char>='A' && char<='Z') ) {
-        
-        charoutput.innerHTML="Output: "+char+" is Alphabat"
+    else if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) {
+
+        charoutput.innerHTML = "Output: " + char + " is Alphabat"
     }
-    else{
-        
-        charoutput.innerHTML="Output: "+char+" is Special Character"
+    else {
+
+        charoutput.innerHTML = "Output: " + char + " is Special Character"
     }
-    ch.value=""
+    ch.value = ""
 }
 
 
 // program 11
 
 function uppercase() {
-    var ch=dom.getElementById("upper")
-    var char=ch.value
-    if (char>='A' && char<='Z' ) {
-        upperoutput.innerHTML="Output: "+char+" Is Uppercase Alphabat"
+    var ch = dom.getElementById("upper")
+    var char = ch.value
+    if (char >= 'A' && char <= 'Z') {
+        upperoutput.innerHTML = "Output: " + char + " Is Uppercase Alphabat"
     }
-    else if (char>='a' && char<='z') {
-        
-        upperoutput.innerHTML="Output: "+char+" Is A Lowercase Alphabat"
+    else if (char >= 'a' && char <= 'z') {
+
+        upperoutput.innerHTML = "Output: " + char + " Is A Lowercase Alphabat"
     }
-    else{
-        upperoutput.innerHTML="Output: "+char+" Is Not A Alphabat"
+    else {
+        upperoutput.innerHTML = "Output: " + char + " Is Not A Alphabat"
 
     }
-    ch.value=""
+    ch.value = ""
 }
 
 
 
 // program 12
 function week() {
-    var num=dom.getElementById("week")
-    var num1=parseInt(num.value)
-    if (num1==1) {
-        weekoutput.innerHTML="Output: Monday"
-        
+    var num = dom.getElementById("week")
+    var num1 = parseInt(num.value)
+    if (num1 == 1) {
+        weekoutput.innerHTML = "Output: Monday"
+
     }
-    else if(num1==2) {
-        weekoutput.innerHTML="Output: Tuseday"
-        
+    else if (num1 == 2) {
+        weekoutput.innerHTML = "Output: Tuseday"
+
     }
-    else if(num1==3) {
-        weekoutput.innerHTML="Output: Wednesday"
-        
+    else if (num1 == 3) {
+        weekoutput.innerHTML = "Output: Wednesday"
+
     }
-    else if(num1==4) {
-        weekoutput.innerHTML="Output: Thursday"
-        
+    else if (num1 == 4) {
+        weekoutput.innerHTML = "Output: Thursday"
+
     }
-    else if(num1==5) {
-        weekoutput.innerHTML="Output: Friday"
-        
+    else if (num1 == 5) {
+        weekoutput.innerHTML = "Output: Friday"
+
     }
-    else if(num1==6) {
-        weekoutput.innerHTML="Output: Saturday"
-        
+    else if (num1 == 6) {
+        weekoutput.innerHTML = "Output: Saturday"
+
     }
-    else if(num1==7) {
-        weekoutput.innerHTML="Output: Sunday"
-        
+    else if (num1 == 7) {
+        weekoutput.innerHTML = "Output: Sunday"
+
     }
-    else{
-        
-        weekoutput.innerHTML="Output: Enter Valid Number From 1-7"
+    else {
+
+        weekoutput.innerHTML = "Output: Enter Valid Number From 1-7"
     }
-    num.value=""
-    
+    num.value = ""
+
 }
 
 
 // program 13
 
 function subject() {
-    var phy=dom.getElementById("phy")
-    var che=dom.getElementById("che")
-    var mat=dom.getElementById("math")
-    var bio=dom.getElementById("bio")
-    var com=dom.getElementById("com")
-    var num1=parseInt(phy.value)
-    var num2=parseInt(che.value)
-    var num3=parseInt(mat.value)
-    var num4=parseInt(bio.value)
-    var num5=parseInt(com.value)
+    var phy = dom.getElementById("phy")
+    var che = dom.getElementById("che")
+    var mat = dom.getElementById("math")
+    var bio = dom.getElementById("bio")
+    var com = dom.getElementById("com")
+    var num1 = parseInt(phy.value)
+    var num2 = parseInt(che.value)
+    var num3 = parseInt(mat.value)
+    var num4 = parseInt(bio.value)
+    var num5 = parseInt(com.value)
 
-    var perc=((num1+num2+num3+num4+num5)/500)*100
-    if (perc<=100 && perc>=0) {
-        peroutput.innerHTML="Output Percentage: "+perc+"%" 
+    var perc = ((num1 + num2 + num3 + num4 + num5) / 500) * 100
+    if (perc <= 100 && perc >= 0) {
+        peroutput.innerHTML = "Output Percentage: " + perc + "%"
     }
-    else  {
-        peroutput.innerHTML="Output Percentage: Enter valid number" 
-        
+    else {
+        peroutput.innerHTML = "Output Percentage: Enter valid number"
+
     }
 
 
 
-    if (perc>=90 && perc<=100) {
-        graoutput.innerHTML="Output Grade: A"
+    if (perc >= 90 && perc <= 100) {
+        graoutput.innerHTML = "Output Grade: A"
     }
-    else if (perc>=80 && perc<=100) {
-        graoutput.innerHTML="Output Grade: B"
+    else if (perc >= 80 && perc <= 100) {
+        graoutput.innerHTML = "Output Grade: B"
     }
-    else if (perc>=70 && perc<=100) {
-        graoutput.innerHTML="Output Grade: C"
+    else if (perc >= 70 && perc <= 100) {
+        graoutput.innerHTML = "Output Grade: C"
     }
-    else if (perc>=60 && perc<=100) {
-        graoutput.innerHTML="Output Grade: D"
+    else if (perc >= 60 && perc <= 100) {
+        graoutput.innerHTML = "Output Grade: D"
     }
-    else if (perc>=40 && perc<=100) {
-        graoutput.innerHTML="Output Grade: E"
+    else if (perc >= 40 && perc <= 100) {
+        graoutput.innerHTML = "Output Grade: E"
     }
-    else if (perc>=0 && perc<40) {
-        graoutput.innerHTML="Output Grade: F"
+    else if (perc >= 0 && perc < 40) {
+        graoutput.innerHTML = "Output Grade: F"
     }
-    else{
-        graoutput.innerHTML="Output Grade: Enter Valid Number"
+    else {
+        graoutput.innerHTML = "Output Grade: Enter Valid Number"
     }
-     phy.value=""
-     mat.value=""
-     che.value=""
-     bio.value=""
-     com.value=""
-    
+    phy.value = ""
+    mat.value = ""
+    che.value = ""
+    bio.value = ""
+    com.value = ""
+
+}
+
+
+
+
+// program 14
+
+function amount() {
+    var num = dom.getElementById("note")
+    var num1 = parseInt(num.value)
+
+    if (num1 >= 0 && num1 < 50) {
+        var x = num1
+        var ten = 0
+        while (x >= 10) {
+            ten++
+            x = x - 10
+        }
+        noteoutput.innerHTML = "Output:In "+num1+" There Is " + ten + " notes of 10"
+
+    }
+    else if (num1 >= 50 && num1 < 100) {
+        var x = num1
+        var fif = 0
+        var ten = 0
+
+        while (x >= 10) {
+            if (x >= 50) {
+                fif++
+                x = x - 50
+            }
+            if (x >= 10) {
+                ten++
+                x = x - 10
+            }
+        }
+        noteoutput.innerHTML = "Output:In "+num1+" There Is " + ten + " notes of 10" + " and " + fif + " notes of 50 "
+    }
+    else if (num1 >= 100 && num1 < 500) {
+        var x = num1
+        var hun = 0
+        var fif = 0
+        var ten = 0
+
+        while (x >= 10) {
+
+            if (x >= 100) {
+                hun++
+                x = x - 100
+            }
+
+            if (x >= 50) {
+                fif++
+                x = x - 50
+            }
+            if (x >= 10) {
+                ten++
+                x = x - 10
+            }
+        }
+        noteoutput.innerHTML = "Output:In "+num1+" There Is " + ten + " notes of 10" + " and " + fif + " notes of 50 " + hun + " notes of 100 "
+    }
+    else if (num1 >= 500 && num1 < 1000) {
+        var x = num1
+        var fiv = 0
+        var hun = 0
+        var fif = 0
+        var ten = 0
+
+
+
+        while (x >= 500) {
+            fiv++
+            x = x - 500
+            while (x >= 100) {
+                hun++
+                x = x - 100
+            }
+
+            while (x >= 50) {
+                fif++
+                x = x - 50
+            }
+            while (x >= 10) {
+                ten++
+                x = x - 10
+
+            }
+        }
+
+        noteoutput.innerHTML = "Output:In "+num1+" There Is " + ten + " notes of 10," + " and " + fif + " notes of 50, " + hun + " notes of 100, " + fiv + " notes of 500, "
+    }
+    else if (num1 >= 1000 && num1 < 5000) {
+        var x = num1
+        var tho = 0
+        var fiv = 0
+        var hun = 0
+        var fif = 0
+        var ten = 0
+
+        while (x >= 1000) {
+
+            tho++
+            x = x - 1000
+            while (x >= 500) {
+                fiv++
+                x = x - 500
+
+
+            }
+            while (x >= 100) {
+
+                hun++
+                x = x - 100
+
+            }
+
+            while (x >= 50) {
+                fif++
+                x = x - 50
+
+            }
+
+            while (x >= 10) {
+                ten++
+                x = x - 10
+
+            }
+        }
+
+
+        noteoutput.innerHTML = "Output:In "+num1+" There Is " + ten + " notes of 10," + " and " + fif + " notes of 50, " + hun + " notes of 100, " + fiv + " notes of 500," + tho + " notes of 1000, "
+    }
+    else if (num1 >= 5000) {
+        var x = num1
+        var five = 0
+        var tho = 0
+        var fiv = 0
+        var hun = 0
+        var fif = 0
+        var ten = 0
+
+        while (x >= 5000) {
+            five++
+            x = x - 5000
+            while (x >= 1000) {
+
+                tho++
+                x = x - 1000
+
+            }
+            while (x >= 500) {
+                fiv++
+                x = x - 500
+
+
+            }
+            while (x >= 100) {
+
+                hun++
+                x = x - 100
+
+            }
+            while (x >= 50) {
+                fif++
+                x = x - 50
+
+            }
+            while (x >= 10) {
+                ten++
+                x = x - 10
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+        noteoutput.innerHTML = "Output:In "+num1+" There Is " + ten + " notes of 10," + " and " + fif + " notes of 50, " + hun + " notes of 100, " + fiv + " notes of 500," + tho + " notes of 1000," + five + " notes of 5000,"
+    }
+
 }
