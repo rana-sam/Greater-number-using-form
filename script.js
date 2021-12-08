@@ -565,6 +565,10 @@ function amount() {
         num=num+hra+da
          saloutput.innerHTML="Output: Gross salary is "+num
      }
+     else{
+        saloutput.innerHTML="Output: Enter valid amount "
+
+     }
      num1.value=""
  }
 
@@ -607,5 +611,9 @@ function bill() {
         billoutput.innerHTML="Output:Total Bill Is "+amt+"RS"
         
     }
-    
+    else{
+        billoutput.innerHTML="Output:Enter valid amount "
+
+    }
+    num.value=""
 }
