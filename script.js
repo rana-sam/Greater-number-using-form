@@ -567,3 +567,37 @@ function amount() {
      }
      num1.value=""
  }
+
+
+//  program 16
+
+function bill() {
+    var num=dom.getElementById("bill")
+    var unit=parseFloat(num.value)
+    var total=0
+    if (unit<=50) {
+
+         total=unit*0.5
+        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        
+    }
+    else if (unit<=150) {
+
+        total=unit*0.75
+        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        
+    }
+    else if (unit<=250) {
+
+        total=unit*1.2
+        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        
+    }
+    else if (unit>250) {
+
+        total=unit*1.5
+        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        
+    }
+    
+}
