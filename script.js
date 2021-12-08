@@ -575,28 +575,36 @@ function bill() {
     var num=dom.getElementById("bill")
     var unit=parseFloat(num.value)
     var total=0
+    var amt,charge
     if (unit<=50) {
 
          total=unit*0.5
-        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+         charge=total*0.2
+         amt=total+charge
+        billoutput.innerHTML="Output:Total Bill Is "+amt+"RS"
         
     }
     else if (unit<=150) {
-
         total=unit*0.75
-        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        charge=total*0.2
+         amt=total+charge
+        billoutput.innerHTML="Output:Total Bill Is "+amt+"RS"
         
     }
     else if (unit<=250) {
 
         total=unit*1.2
-        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        charge=total*0.2
+         amt=total+charge
+        billoutput.innerHTML="Output:Total Bill Is "+amt+"RS"
         
     }
     else if (unit>250) {
 
         total=unit*1.5
-        billoutput.innerHTML="Output:Total Bill Is "+total+"RS"
+        charge=total*0.2
+         amt=total+charge
+        billoutput.innerHTML="Output:Total Bill Is "+amt+"RS"
         
     }
     
